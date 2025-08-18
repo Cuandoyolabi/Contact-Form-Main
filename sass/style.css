@@ -37,6 +37,7 @@
   padding-top: 20px;
 }
 .main-container .principal-container .form-container .label {
+  font-weight: 500;
   color: var(--Grey-900);
 }
 .main-container .principal-container .form-container .label .simbol-green {
@@ -77,6 +78,11 @@
   font-size: 20px;
   border: 1px solid var(--Grey-500);
 }
+.main-container .principal-container .form-container .queryType-container .input-query {
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--Grey-900);
+}
 .main-container .principal-container .form-container .message-container {
   width: 99%;
   height: 200px;
@@ -99,6 +105,10 @@
   align-items: center;
   margin: 40px 0px;
   gap: 20px;
+}
+.main-container .principal-container .form-container .consent-container .input-consent {
+  width: 20px;
+  height: 20px;
 }
 .main-container .principal-container .form-container .submit {
   width: 99%;

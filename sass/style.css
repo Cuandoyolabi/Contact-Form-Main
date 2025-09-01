@@ -49,6 +49,11 @@
 .main-container .principal-container .form-container .label .simbol-green {
   color: var(--Green-600);
 }
+.main-container .principal-container .form-container .form-names-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
 .main-container .principal-container .form-container .name-container,
 .main-container .principal-container .form-container .lastName-container,
 .main-container .principal-container .form-container .email-container {
@@ -135,6 +140,24 @@
 }
 
 @media (min-width: 700px) {
+  .main-container {
+    min-height: 100vh;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-container .principal-container {
+    width: 50%;
+    height: 90%;
+  }
+  .main-container .principal-container .form-container .form-names-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .main-container .principal-container .form-container .form-names-container .name-container, .main-container .principal-container .form-container .form-names-container .lastName-container {
+    width: 48%;
+  }
   .main-container .principal-container .form-container .queryType-container {
     height: 130px;
     display: flex;
@@ -148,5 +171,13 @@
   }
   .main-container .principal-container .form-container .queryType-container .label-query {
     border: 2px solid red;
+  }
+  .main-container .principal-container .form-container .message-container {
+    height: 100px;
+  }
+  .main-container .principal-container .form-container .consent-container {
+    width: 90%;
+    gap: 10px;
+    justify-content: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */

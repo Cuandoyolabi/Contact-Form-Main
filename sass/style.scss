@@ -19,24 +19,30 @@
 
 .main-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding-top: 30px;
+  padding-bottom: 30px;
   background-color: var(--Green-200);
 
   .principal-container {
     width: 90%;
     height: auto;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     background-color: var(--White);
     border-radius: 20px;
 
     .form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
       .form-title {
+        align-self: flex-start;
+        margin-left: 5%;
         padding-top: 20px;
+        color: var(--Grey-900);
       }
       .label {
         font-weight: 500;
@@ -50,7 +56,7 @@
       .name-container,
       .lastName-container,
       .email-container {
-        width: 100%;
+        width: 90%;
         height: 80px;
         padding-top: 20px;
       }
@@ -64,35 +70,43 @@
       }
 
       .queryType-container {
-        width: 100%;
+        width: 90%;
         height: 200px;
         padding-top: 20px;
         display: flex;
         flex-direction: column;
         gap: 16px;
 
-        .label-query {
-          width: 100%;
-          height: 60px;
+        .queryType-options {
           display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 10px;
-          padding-left: 15px;
-          border-radius: 8px;
-          font-size: 20px;
-          border: 1px solid var(--Grey-500);
-        }
-        .input-query {
-          width: 25px;
-          height: 25px;
-          border: 1px solid var(--Grey-900);
+          flex-direction: column;
+          height: 180px;
+          gap: 15px;
+
+          .label-query {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            padding-left: 15px;
+            border-radius: 8px;
+            font-size: 20px;
+            border: 1px solid var(--Grey-500);
+
+            .input-query {
+              width: 25px;
+              height: 25px;
+              border: 1px solid var(--Grey-900);
+            }
+          }
         }
       }
 
       .message-container {
-        width: 99%;
+        width: 90%;
         height: 200px;
         padding-top: 20px;
         margin: auto;
@@ -107,7 +121,7 @@
       }
 
       .consent-container {
-        width: 99%;
+        width: 95%;
         height: 70px;
         display: flex;
         flex-direction: row;
@@ -123,7 +137,7 @@
       }
 
       .submit {
-        width: 99%;
+        width: 90%;
         height: 50px;
         color: white;
         border-radius: 10px;
@@ -132,6 +146,31 @@
         background-color: var(--Green-600);
         margin-bottom: 20px;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .main-container {
+    .principal-container {
+      .form-container {
+        .queryType-container {
+          height: 130px;
+          display: flex;
+          flex-direction: column;
+
+          .queryType-options{
+            width: 100%;
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+          }
+
+          .label-query {
+            border: 2px solid red;
+          }
+        }
       }
     }
   }

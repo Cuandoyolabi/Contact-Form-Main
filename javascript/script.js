@@ -10,3 +10,5 @@ document.querySelectorAll('.input-query').forEach(input => {
     label__id.classList.remove('focused');
   });
 });
+
+

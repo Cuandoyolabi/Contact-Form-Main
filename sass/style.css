@@ -69,8 +69,11 @@
 .main-container .principal-container .form-container .input-email {
   width: 100%;
   height: 40px;
+  padding: 10px;
   border-radius: 8px;
+  margin-top: 6px;
   border: 1px solid var(--Green-600);
+  cursor: pointer;
 }
 .main-container .principal-container .form-container .input-text:focus,
 .main-container .principal-container .form-container .input-email:focus {
@@ -98,7 +101,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 5px;
   padding-left: 15px;
   border-radius: 8px;
   font-size: 20px;
@@ -112,6 +115,7 @@
   width: 25px;
   height: 25px;
   border: 1px solid var(--Grey-900);
+  cursor: pointer;
 }
 .main-container .principal-container .form-container .label-query:has(.input-query:checked) {
   background-color: var(--Green-200);
@@ -120,7 +124,7 @@
 .main-container .principal-container .form-container .message-container {
   width: 90%;
   height: 200px;
-  padding-top: 20px;
+  padding-top: 5px;
   margin: auto;
 }
 .main-container .principal-container .form-container .message-container .input-message {
@@ -128,6 +132,8 @@
   height: 100%;
   margin-top: 10px;
   border-radius: 10px;
+  padding: 10px;
+  resize: none;
   border: 1px solid var(--Grey-500);
 }
 .main-container .principal-container .form-container .consent-container {
@@ -143,6 +149,7 @@
 .main-container .principal-container .form-container .consent-container .input-consent {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .main-container .principal-container .form-container .submit {
   width: 90%;

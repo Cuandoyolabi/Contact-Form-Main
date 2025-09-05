@@ -11,4 +11,53 @@ document.querySelectorAll('.input-query').forEach(input => {
   });
 });
 
+const form = document.getElementById('form');
+
+form.addEventListener("submit", function(event){
+
+  event.preventDefault();
+
+  const error = document.querySelectorAll('.error');
+  const input = document.querySelectorAll('input');
+
+  const nombre = document.getElementById('name');
+  if(nombre.value.trim() === ""){
+    nombre.classList.add("error");
+    nombre.nextElementSibling.textContent = "The field is required";
+    isValid = false;
+  }
+
+  const segundoNombre = document.getElementById('lastName');
+  if(segundoNombre.value.trim() === ""){
+    segundoNombre.classList.add("error");
+    segundoNombre.nextElementSibling.textContent = "The field is required";
+    isValid = false;
+  }
+
+  const email = document.getElementById('email');
+  if(email.value.trim() === ""){
+    email.classList.add("error");
+    email.nextElementSibling.textContent = "Please enter a valid email address";
+    isValid = false;
+  } else if(!/^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/.test(email.value.trim())){
+    email.classList.add("error");
+    email.nextElementSibling.textContent = "The email is not valid";
+    isValid = false;
+  }
+
+
+
+
+  const constimiento = document.getElementById('input-consent');
+  if(!constimiento.checked){
+    constimiento.classList.add("error");
+    constimiento.nextElementSibling.textContent = "To submit this form, please consent to being contacted";
+    isValid = false;
+  }
+
+  if(isValid){
+    form.submit();
+  }
+
+});
 

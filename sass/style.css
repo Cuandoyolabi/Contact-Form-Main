@@ -60,6 +60,7 @@
   width: 100%;
   height: 85px;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 .main-container .principal-container .form-container .email-container {
   width: 90%;
@@ -124,8 +125,8 @@
 .main-container .principal-container .form-container .message-container {
   width: 90%;
   height: 200px;
-  padding-top: 5px;
   margin: auto;
+  margin-top: 40px;
 }
 .main-container .principal-container .form-container .message-container .input-message {
   width: 100%;
@@ -140,16 +141,28 @@
   width: 95%;
   height: 70px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 60px 0px 20px 0px;
   gap: 20px;
 }
 .main-container .principal-container .form-container .consent-container .input-consent {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+.main-container .principal-container .form-container .consent-container .consent-division {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.main-container .principal-container .form-container .consent-container .consent-error {
+  width: 100%;
+  height: 20px;
+}
+.main-container .principal-container .form-container .consent-container .consent-error .errorConsent {
+  font-size: 13px;
 }
 .main-container .principal-container .form-container .submit {
   width: 90%;
@@ -159,8 +172,20 @@
   border: none;
   font-size: 19px;
   background-color: var(--Green-600);
+  margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+.error {
+  color: var(--Red);
+  font-size: 14px;
+  margin: 2px 0px 0px 0px;
+  display: none;
+}
+
+.errorName.active {
+  display: block;
 }
 
 @media (min-width: 700px) {

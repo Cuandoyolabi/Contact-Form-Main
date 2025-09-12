@@ -17,13 +17,14 @@ form.addEventListener("submit", function(event){
 
   event.preventDefault();
 
-  const error = document.querySelectorAll('.error');
-  const input = document.querySelectorAll('input');
+  const errorName = document.getElementById('errorName');
+  let isValid = true;
 
   const nombre = document.getElementById('name');
+  console.log(nombre.value)
   if(nombre.value.trim() === ""){
-    nombre.classList.add("error");
-    nombre.nextElementSibling.textContent = "The field is required";
+    errorName.classList.add("active");
+    console.log("Si llega aqui")
     isValid = false;
   }
 
@@ -46,8 +47,6 @@ form.addEventListener("submit", function(event){
   }
 
 
-
-
   const constimiento = document.getElementById('input-consent');
   if(!constimiento.checked){
     constimiento.classList.add("error");
@@ -56,6 +55,7 @@ form.addEventListener("submit", function(event){
   }
 
   if(isValid){
+
     form.submit();
   }
 

@@ -29,27 +29,36 @@
                 >First Name <span class="simbol-green">*</span></label
               >
               <input id="name" type="text" class="input-text" required />
-              <p class="errorName error" id="errorName__id">The field is required</p>
+              <p class="errorName error" id="errorName__id">
+                The field is required
+              </p>
             </div>
 
             <div class="lastName-container">
               <label for="lastName" class="label"
-                >Last Name <span class="simbol-green">*</span></label>
+                >Last Name <span class="simbol-green">*</span></label
+              >
               <input id="lastName" type="text" class="input-text" required />
-              <p class="errorLastName error" id="errorLastName__id">The field is required</p>
+              <p class="errorLastName error" id="errorLastName__id">
+                The field is required
+              </p>
             </div>
           </div>
 
           <div class="email-container">
             <label for="email" class="label"
-              >Email Addres <span class="simbol-green">*</span></label>
+              >Email Addres <span class="simbol-green">*</span></label
+            >
             <input id="email" type="email" class="input-email" required />
-            <p class="errorEmail error" id="errorEmail__id">Please enter a valid email addres</p>
+            <p class="errorEmail error" id="errorEmail__id">
+              Please enter a valid email addres
+            </p>
           </div>
 
           <div class="queryType-container">
             <label for="queryType" class="label"
-              >Query Type <span class="simbol-green">*</span></label>
+              >Query Type <span class="simbol-green">*</span></label
+            >
             <div class="queryType-options">
               <label for="QueryType" id="label-query-id" class="label-query">
                 <input
@@ -73,7 +82,9 @@
                 Support Request
               </label>
             </div>
-            <p class="errorQuery error" id="errorQuery__id">Please select a query type</p>
+            <p class="errorQuery error" id="errorQuery__id">
+              Please select a query type
+            </p>
           </div>
 
           <div class="message-container">
@@ -82,23 +93,36 @@
             >
             <textarea name="message" class="input-message" id="message-id">
             </textarea>
-            <p class="errorMessage error" id="errorMessage__id">The field is required</p>
+            <p class="errorMessage error" id="errorMessage__id">
+              The field is required
+            </p>
           </div>
 
           <div class="consent-container">
             <label for="consent" class="label"></label>
-            
+
             <div class="consent-division">
-              <input type="checkbox" class="input-consent" id="" name="consent" />
+              <input
+                type="checkbox"
+                class="input-consent"
+                id=""
+                name="consent"
+              />
               <p>I conset to being contacted by the team</p>
             </div>
             <div class="consent-error">
-              <p class="errorConsent error" id="errorConsent__id">To submit this form, please consent to being contacted</p>
+              <p class="errorConsent error" id="errorConsent__id">
+                To submit this form, please consent to being contacted
+              </p>
             </div>
-            
           </div>
           <button type="submit" class="submit">Submit</button>
         </form>
+      </div>
+
+      <div class="sent-container" id="sent-container__id">
+        <h3 class="sent-title">Message Sent!</h3>
+        <p class="sent-text">Thanks for completing the form. We'll be in touch soon!</p>
       </div>
     </main>
 

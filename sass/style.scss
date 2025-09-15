@@ -58,7 +58,12 @@
         flex-direction: column;
       }
 
-      .name-container,
+      .name-container {
+        width: 100%;
+        height: 85px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+      }
       .lastName-container {
         width: 100%;
         height: 85px;
@@ -175,10 +180,6 @@
         .consent-error {
           width: 100%;
           height: 20px;
-
-          .errorConsent {
-            font-size: 13px;
-          }
         }
       }
 
@@ -198,15 +199,15 @@
   }
 }
 
-.error {
-  color: var(--Red);
-  font-size: 14px;
-  margin: 2px 0px 0px 0px;
+.errorName,
+.errorLastName,
+.errorEmail,
+.errorQuery,
+.errorMessage,
+.errorConsent {
   display: none;
-}
-
-.errorName.active{
-  display: block;
+  color: var(--Red);
+  font-size: 13px;
 }
 
 

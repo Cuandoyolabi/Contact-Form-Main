@@ -17,21 +17,22 @@ form.addEventListener("submit", function(event){
 
   event.preventDefault();
 
-  const errorName = document.getElementById('errorName');
+
   let isValid = true;
 
+  const errorNameID = document.getElementById('errorName');
   const nombre = document.getElementById('name');
   console.log(nombre.value)
   if(nombre.value.trim() === ""){
-    errorName.classList.add("active");
-    console.log("Si llega aqui")
+    errorNameID.classList.add("active");
     isValid = false;
   }
 
+  const errorLastNameID = document.getElementById("errorLastNameID");
   const segundoNombre = document.getElementById('lastName');
   if(segundoNombre.value.trim() === ""){
-    segundoNombre.classList.add("error");
-    segundoNombre.nextElementSibling.textContent = "The field is required";
+    errorLastNameID.classList.add("active");
+    console.log("Si llega aqui")
     isValid = false;
   }
 
